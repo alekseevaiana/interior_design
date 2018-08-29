@@ -5,9 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <meta name="format-detection" content="telephone=no">
-  <title>base</title>
-  <link rel="preload" href="css/style.min.css" as="style">
-  <link rel="stylesheet" href="css/style.min.css">
+  <title>Interior design</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:300,400,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
@@ -16,5 +18,32 @@
   <script src="js/svg4everybody.js"></script>
 </head>
 <body>
+<header class="main-header">
+  <div class="main-header__container">
+    <div class="main-header__navigation">
+      <div class="navigation__logo">
+        <picture>
+          <source media="(min-width: 768px)"
+            srcset="./img/logo_tablet.png">
+          <img src="./img/logo.png" alt="Логотип сайта">
+        </picture>
+      </div>
+      <div class="navigation__menu">
+        <picture>
+          <source media="(min-width: 768px)"
+            srcset="./img/menu_tablet.png">
+          <img src="./img/menu.png" alt="Меню">
+        </picture>
+      </div>
+    </div>
+    <h1 class="main-header__title">Дизайн интерьеров</h1>
+    <p class="main-header__description">Воплотим в жизнь интерьер,
+      который будет радовать лаконичностью и уютом.</p>
+    <a href="" class="main-header__button">Заказать дизайн</a>
+    <div class="main-header__arrow">
+    </div>
+  </div>
+</header>
+
 </body>
 </html>
