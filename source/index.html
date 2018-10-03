@@ -102,12 +102,31 @@
     <li class="portfolio__item"><a href="" class="portfolio__item-link">Отделочные работы</a></li>
   </ul>
   <div class="portfolio__images">
-    <img src="./img/portfolio_left_img.jpg" alt="Боковая картинка слева" width="14" height="529">
+    <picture>
+      <source media="(min-width: 768px)"
+        srcset="./img/portfolio_left_768.png">
+      <img src="./img/portfolio_left_img.jpg" alt="Боковая картинка слева">
+    </picture>
     <div>
-      <img src="./img/portfolio_img_mobile.jpg" alt="Картинка интерьера" width="260" height="529">
+      <picture>
+        <source media="(min-width: 768px)"
+          srcset="./img/portfolio_pic768.png">
+        <img src="./img/portfolio_img_mobile.jpg" alt="Картинка интерьера">
+      </picture>
       <p class="portfolio__img-description">Дизайн интерьера гостиной</p>
     </div>
-    <img src="./img/portfolio_right_img.jpg" alt="Боковая картинка справа" width="13" height="529">
+
+    <!--<picture>-->
+    <!--<source media="(min-width: 1000px)" srcset="./img/logo_desctop.png">-->
+    <!--<source media="(min-width: 768px)"-->
+    <!--srcset="./img/logo_tablet.png">-->
+    <!--<img src="./img/logo.png" alt="Логотип сайта">-->
+    <!--</picture>-->
+    <picture>
+      <source media="(min-width: 768px)"
+        srcset="./img/portfolio_right_768.png">
+      <img src="./img/portfolio_right_img.jpg" alt="Боковая картинка справа">
+    </picture>
   </div>
 </section>
 <section class="services">
@@ -123,7 +142,15 @@
       <li class="services__item"><a href="" class="services__item-link">Выезд дизайнера на дом</a></li>
     </ul>
   </div>
-  <img src="./img/services_img.jpg" alt="Картинка интерьера" class="services__image" width="100%" height="auto">
+  <picture>
+    <source media="(min-width: 768px)"
+      srcset="./img/services_pic_768.jpg">
+    <img src="./img/services_img.jpg" alt="Картинка интерьера" class="services__image" width="100%" height="auto">
+  </picture>
+  <div class="services__title-wrapper">
+  <h2 class="services__title">Дизайн коммерческих объектов</h2>
+    <span class="services__number-of-projects">532 проекта</span>
+  </div>
   <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие
     интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
   <div class="services__button-container">
@@ -173,7 +200,8 @@
   <h2 class="form__title">Мечтаете об
     интерьере
     от BRUME?</h2>
-  <p class="form__description form__description--main">Оставьте контактные данные, менеджер свяжется с вами в течении 15 минут, для уточнения
+  <p class="form__description form__description--main">Оставьте контактные данные, менеджер свяжется с вами в течении 15
+    минут, для уточнения
     всех деталей.</p>
   <div class="form__group">
     <label for="name">
@@ -187,7 +215,8 @@
     </label>
   </div>
   <button type="submit" class="form__button">Отправить</button>
-  <p class="form__description form__description--note">Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
+  <p class="form__description form__description--note">Нажимая на кнопку, вы соглашаетесь с условиями обработки
+    персональных данных</p>
 </form>
 <footer class="footer">
   <img class="footer__logo" src="./img/footer_logo_mobile.png" alt="Логотип в футере" class="footer__logo" width="70">
