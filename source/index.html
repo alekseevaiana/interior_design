@@ -102,13 +102,25 @@
     <li class="portfolio__item"><a href="" class="portfolio__item-link">Отделочные работы</a></li>
   </ul>
   <div class="portfolio__images">
-    <picture>
-      <source media="(min-width: 768px)"
-        srcset="./img/portfolio_left_768.png">
-      <img src="./img/portfolio_left_img.jpg" alt="Боковая картинка слева">
-    </picture>
-    <div>
+    <div class="portfolio__images-switcher">
+      <a href=""><img src="./img/arrow-left.png" alt="" width="38" height="12"></a>
+      <a href=""><img src="./img/arrow-left.png" alt="" width="38" height="12"></a>
+    </div>
+    <div class="portfolio__image-wrapper">
       <picture>
+        <p class="portfolio__image-title">Дизайн интерьера гостиной</p>
+        <p class="portfolio__image-description">Дизайн интерьера</p>
+        <source media="(min-width: 1360px)"
+          srcset="./img/portfolio_1_desktop.png">
+        <source media="(min-width: 768px)"
+          srcset="./img/portfolio_left_768.png">
+        <img src="./img/portfolio_left_img.jpg" alt="Боковая картинка слева">
+      </picture>
+    </div>
+    <div  class="portfolio__image-wrapper">
+      <picture>
+        <source media="(min-width: 1360px)"
+          srcset="./img/portfolio_2_desktop.jpg">
         <source media="(min-width: 768px)"
           srcset="./img/portfolio_pic768.png">
         <img src="./img/portfolio_img_mobile.jpg" alt="Картинка интерьера">
@@ -122,11 +134,28 @@
     <!--srcset="./img/logo_tablet.png">-->
     <!--<img src="./img/logo.png" alt="Логотип сайта">-->
     <!--</picture>-->
-    <picture>
-      <source media="(min-width: 768px)"
-        srcset="./img/portfolio_right_768.png">
-      <img src="./img/portfolio_right_img.jpg" alt="Боковая картинка справа">
-    </picture>
+    <div class="portfolio__img-3-desktop portfolio__image-wrapper">
+      <p class="portfolio__image-title">Дизайн столовой
+        в стиле «Бохо»</p>
+      <p class="portfolio__image-description">Дизайн интерьера</p>
+      <picture>
+        <source media="(min-width: 1360px)"
+          srcset="./img/portfolio_3_desktop.jpg">
+        <img src="./img/portfolio_3_desktop.jpg" alt="Боковая картинка справа">
+      </picture>
+    </div>
+    <div  class="portfolio__image-wrapper">
+      <p class="portfolio__image-title">Лофт интерьер
+        для отеля Hiloft</p>
+      <p class="portfolio__image-description">Дизайн интерьера</p>
+      <picture>
+        <source media="(min-width: 1360px)"
+          srcset="./img/portfolio_4_desktop.jpg">
+        <source media="(min-width: 768px)"
+          srcset="./img/portfolio_right_768.png">
+        <img src="./img/portfolio_right_img.jpg" alt="Боковая картинка справа">
+      </picture>
+    </div>
   </div>
 </section>
 <section class="services">
@@ -148,7 +177,7 @@
     <img src="./img/services_img.jpg" alt="Картинка интерьера" class="services__image" width="100%" height="auto">
   </picture>
   <div class="services__title-wrapper">
-  <h2 class="services__title">Дизайн коммерческих объектов</h2>
+    <h2 class="services__title">Дизайн коммерческих объектов</h2>
     <span class="services__number-of-projects">532 проекта</span>
   </div>
   <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие
@@ -166,33 +195,52 @@
   <h2 class="steps__title">Этапы работы</h2>
   <ul class="steps__list">
     <li class="steps__item">
-      <h3 class="steps__item-title">Консультация</h3>
-      <p class="steps__item-text">Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки
-        реализации.</p>
+      <span class="steps__number">1</span>
+      <div class="steps__item-inner">
+        <h3 class="steps__item-title">Консультация</h3>
+        <p class="steps__item-text">Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем
+          сроки
+          реализации.</p>
+      </div>
     </li>
     <li class="steps__item">
-      <h3 class="steps__item-title">Техническое задание</h3>
-      <p class="steps__item-text">Составляем техническое задание. Заключаем договор, в котором прописываем все этапы
-        проекта.</p>
+      <span class="steps__number">2</span>
+      <div class="steps__item-inner">
+        <h3 class="steps__item-title">Техническое задание</h3>
+        <p class="steps__item-text">Составляем техническое задание. Заключаем договор, в котором прописываем все этапы
+          проекта.</p>
+      </div>
     </li>
     <li class="steps__item">
-      <h3 class="steps__item-title">Замеры и планировка</h3>
-      <p class="steps__item-text">Фиксируем размеры стен, окон, плинтусов, дверных проемов для эффективной работы</p>
+      <span class="steps__number">3</span>
+      <div class="steps__item-inner">
+        <h3 class="steps__item-title">Замеры и планировка</h3>
+        <p class="steps__item-text">Фиксируем размеры стен, окон, плинтусов, дверных проемов для эффективной работы</p>
+      </div>
     </li>
     <li class="steps__item">
-      <h3 class="steps__item-title">Дизайн-концепция</h3>
-      <p class="steps__item-text">Создаем концепцию на основе пожеланий клиента, его образов и ощущений. подбираем
-        мебель.</p>
+      <span class="steps__number">4</span>
+      <div class="steps__item-inner">
+        <h3 class="steps__item-title">Дизайн-концепция</h3>
+        <p class="steps__item-text">Создаем концепцию на основе пожеланий клиента, его образов и ощущений. подбираем
+          мебель.</p>
+      </div>
     </li>
     <li class="steps__item">
-      <h3 class="steps__item-title">3D Визуализация</h3>
-      <p class="steps__item-text">Создаем 3d визуализацию, собираем пакет чертежей соответствующий строительным
-        нормам..</p>
+      <span class="steps__number">5</span>
+      <div class="steps__item-inner">
+        <h3 class="steps__item-title">3D Визуализация</h3>
+        <p class="steps__item-text">Создаем 3d визуализацию, собираем пакет чертежей соответствующий строительным
+          нормам..</p>
+      </div>
     </li>
     <li class="steps__item">
-      <h3 class="steps__item-title">Комплектация интерьера</h3>
-      <p class="steps__item-text">Подбираем мебель, отделочные материалы, светильники и текстиль. Декорируем
-        интерьер.</p>
+      <span class="steps__number">6</span>
+      <div class="steps__item-inner">
+        <h3 class="steps__item-title">Комплектация интерьера</h3>
+        <p class="steps__item-text">Подбираем мебель, отделочные материалы, светильники и текстиль. Декорируем
+          интерьер.</p>
+      </div>
     </li>
   </ul>
 </section>
@@ -220,19 +268,21 @@
 </form>
 <footer class="footer">
   <img class="footer__logo" src="./img/footer_logo_mobile.png" alt="Логотип в футере" class="footer__logo" width="70">
-  <ul class="footer__social-list social-btns">
-    <li class="footer__social-item"><a href="" class="footer__social-link">
-      <img src="./img/footer_vk_mobile.png" alt="Вконтакте">
-    </a></li>
-    <li class="footer__social-item"><a href="" class="footer__social-link">
-      <img src="./img/footer_inst_mobile.png" alt="Инстаграмм">
-    </a></li>
-    <li class="footer__social-item"><a href="" class="footer__social-link">
-      <img src="./img/footer_fb_mobile.png" alt="Фейсбук">
-    </a></li>
-  </ul>
-  <p class="footer__text">BRUME interior, 2017</p>
-  <p class="footer__text">HolodnayaDesign</p>
+  <div class="footer__inner-wrapper">
+    <ul class="footer__social-list social-btns">
+      <li class="footer__social-item"><a href="" class="footer__social-link">
+        <img class="footer__social-image footer__social-image-vk" src="./img/footer_vk_mobile.png" alt="Вконтакте">
+      </a></li>
+      <li class="footer__social-item"><a href="" class="footer__social-link">
+        <img class="footer__social-image footer__social-image-inst" src="./img/footer_inst_mobile.png" alt="Инстаграмм">
+      </a></li>
+      <li class="footer__social-item"><a href="" class="footer__social-link">
+        <img class="footer__social-image footer__social-image-fb" src="./img/footer_fb_mobile.png" alt="Фейсбук">
+      </a></li>
+    </ul>
+    <p class="footer__text footer__text--main">BRUME interior, 2017 &#9400;</p>
+    <p class="footer__text footer__text--last">HolodnayaDesign</p>
+  </div>
 </footer>
 </body>
 </html>
