@@ -102,88 +102,92 @@
     <li class="portfolio__item"><a href="" class="portfolio__item-link">Отделочные работы</a></li>
   </ul>
   <div class="portfolio__images">
-    <div class="portfolio__images-switcher">
-      <a href=""><img src="./img/arrow-left.png" alt="" width="38" height="12"></a>
-      <a href=""><img src="./img/arrow-left.png" alt="" width="38" height="12"></a>
+    <div class="switchers">
+      <a class="switchers__left" href=""><img src="./img/arrow-left.png" alt="" width="38" height="12"></a>
+      <a class="switchers__right" href=""><img src="./img/arrow-left.png" alt="" width="38" height="12"></a>
     </div>
-    <div class="portfolio__image-wrapper">
-      <picture>
-        <p class="portfolio__image-title">Дизайн интерьера гостиной</p>
+    <div class="portfolio__images-wrapper">
+      <div class="portfolio__image-wrapper">
+        <picture>
+          <p class="portfolio__image-title">Дизайн интерьера гостиной</p>
+          <p class="portfolio__image-description">Дизайн интерьера</p>
+          <source media="(min-width: 1340px)"
+            srcset="./img/portfolio_1_desktop.png">
+          <source media="(min-width: 768px)"
+            srcset="./img/portfolio_left_768.png">
+          <img src="./img/portfolio_left_img.jpg" alt="Боковая картинка слева">
+        </picture>
+      </div>
+      <div class="portfolio__image-wrapper">
+        <picture>
+          <source media="(min-width: 1340px)"
+            srcset="./img/portfolio_2_desktop.jpg">
+          <source media="(min-width: 768px)"
+            srcset="./img/portfolio_pic768.png">
+          <img src="./img/portfolio_img_mobile.jpg" alt="Картинка интерьера">
+        </picture>
+        <p class="portfolio__img-description">Дизайн интерьера гостиной</p>
+      </div>
+      <div class="portfolio__img-3-desktop portfolio__image-wrapper">
+        <p class="portfolio__image-title">Дизайн столовой
+          в стиле «Бохо»</p>
         <p class="portfolio__image-description">Дизайн интерьера</p>
-        <source media="(min-width: 1360px)"
-          srcset="./img/portfolio_1_desktop.png">
-        <source media="(min-width: 768px)"
-          srcset="./img/portfolio_left_768.png">
-        <img src="./img/portfolio_left_img.jpg" alt="Боковая картинка слева">
-      </picture>
-    </div>
-    <div  class="portfolio__image-wrapper">
-      <picture>
-        <source media="(min-width: 1360px)"
-          srcset="./img/portfolio_2_desktop.jpg">
-        <source media="(min-width: 768px)"
-          srcset="./img/portfolio_pic768.png">
-        <img src="./img/portfolio_img_mobile.jpg" alt="Картинка интерьера">
-      </picture>
-      <p class="portfolio__img-description">Дизайн интерьера гостиной</p>
-    </div>
-
-    <!--<picture>-->
-    <!--<source media="(min-width: 1000px)" srcset="./img/logo_desctop.png">-->
-    <!--<source media="(min-width: 768px)"-->
-    <!--srcset="./img/logo_tablet.png">-->
-    <!--<img src="./img/logo.png" alt="Логотип сайта">-->
-    <!--</picture>-->
-    <div class="portfolio__img-3-desktop portfolio__image-wrapper">
-      <p class="portfolio__image-title">Дизайн столовой
-        в стиле «Бохо»</p>
-      <p class="portfolio__image-description">Дизайн интерьера</p>
-      <picture>
-        <source media="(min-width: 1360px)"
-          srcset="./img/portfolio_3_desktop.jpg">
-        <img src="./img/portfolio_3_desktop.jpg" alt="Боковая картинка справа">
-      </picture>
-    </div>
-    <div  class="portfolio__image-wrapper">
-      <p class="portfolio__image-title">Лофт интерьер
-        для отеля Hiloft</p>
-      <p class="portfolio__image-description">Дизайн интерьера</p>
-      <picture>
-        <source media="(min-width: 1360px)"
-          srcset="./img/portfolio_4_desktop.jpg">
-        <source media="(min-width: 768px)"
-          srcset="./img/portfolio_right_768.png">
-        <img src="./img/portfolio_right_img.jpg" alt="Боковая картинка справа">
-      </picture>
+        <picture>
+          <source media="(min-width: 1340px)"
+            srcset="./img/portfolio_3_desktop.jpg">
+          <img src="./img/portfolio_3_desktop.jpg" alt="Боковая картинка справа">
+        </picture>
+      </div>
+      <div class="portfolio__image-wrapper">
+        <p class="portfolio__image-title">Лофт интерьер
+          для отеля Hiloft</p>
+        <p class="portfolio__image-description">Дизайн интерьера</p>
+        <picture>
+          <source media="(min-width: 1340px)"
+            srcset="./img/portfolio_4_desktop.jpg">
+          <source media="(min-width: 768px)"
+            srcset="./img/portfolio_right_768.png">
+          <img src="./img/portfolio_right_img.jpg" alt="Боковая картинка справа">
+        </picture>
+      </div>
     </div>
   </div>
 </section>
 <section class="services">
-  <div class="services__container">
-    <h2 class="services__title">Наши услуги</h2>
+  <h2 class="services__title">Наши услуги</h2>
+  <div class="services__wrapper">
     <ul class="services__list">
       <li class="services__item"><a href="" class="services__item-link">Дизайн жилого помещения</a></li>
       <li class="services__item"><a href="" class="services__item-link">Дизайн отельных комнат</a></li>
-      <li class="services__item"><a href="" class="services__item-link services__item-link--active">Дизайн коммерческих
+      <li class="services__item services__item--active"><a href=""
+        class="services__item-link services__item-link--active">Дизайн коммерческих
         объектов</a></li>
       <li class="services__item"><a href="" class="services__item-link">Ремонт под ключ</a></li>
       <li class="services__item"><a href="" class="services__item-link">Отделочные работы</a></li>
       <li class="services__item"><a href="" class="services__item-link">Выезд дизайнера на дом</a></li>
     </ul>
-  </div>
-  <picture>
-    <source media="(min-width: 768px)"
-      srcset="./img/services_pic_768.jpg">
-    <img src="./img/services_img.jpg" alt="Картинка интерьера" class="services__image" width="100%" height="auto">
-  </picture>
-  <div class="services__title-wrapper">
-    <h2 class="services__title">Дизайн коммерческих объектов</h2>
-    <span class="services__number-of-projects">532 проекта</span>
-  </div>
-  <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создает коммерческие
-    интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
-  <div class="services__button-container">
-    <a href="" class="services__button">Консультация</a>
+    <div class="services__column-right-wrapper">
+      <picture>
+        <source media="(min-width: 1340px)"
+          srcset="./img/services_pic_desktop.png"
+        >
+        <source media="(min-width: 768px)"
+          srcset="./img/services_pic_768.jpg">
+        <img src="./img/services_img.jpg" alt="Картинка интерьера" class="services__image" width="100%" height="auto">
+      </picture>
+      <div class="services__title-wrapper">
+        <h3 class="services__sub-title">Дизайн коммерческих объектов</h3>
+        <span class="services__number-of-projects">532 проекта</span>
+      </div>
+      <div class="services__bottom-wrapper">
+        <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создает
+          коммерческие
+          интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+        <div class="services__button-container">
+          <a href="" class="services__button">Консультация</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <section class="video">
@@ -245,27 +249,58 @@
   </ul>
 </section>
 <form action="" class="form">
-  <h2 class="form__title">Мечтаете об
-    интерьере
-    от BRUME?</h2>
-  <p class="form__description form__description--main">Оставьте контактные данные, менеджер свяжется с вами в течении 15
-    минут, для уточнения
-    всех деталей.</p>
-  <div class="form__group">
-    <label for="name">
-      <input type="text" class="form__input" id="name" placeholder="Имя">
-    </label>
-    <label for="number">
-      <input type="text" class="form__input" id="number" placeholder="Телефон">
-    </label>
-    <label for="email">
-      <input type="text" class="form__input" id="email" placeholder="E-mail">
-    </label>
+  <div class="form__desktop-left">
+    <h2 class="form__title">Мечтаете об
+      интерьере
+      от BRUME?</h2>
+    <p class="form__description form__description--main">Оставьте контактные данные, менеджер свяжется с вами в течении
+      15
+      минут, для уточнения
+      всех деталей.</p>
+    <div class="form__group">
+      <label for="name">
+        <input type="text" class="form__input" id="name" placeholder="Имя">
+      </label>
+      <label for="number">
+        <input type="text" class="form__input" id="number" placeholder="Телефон">
+      </label>
+      <label for="email">
+        <input type="text" class="form__input" id="email" placeholder="E-mail">
+      </label>
+    </div>
+    <button type="submit" class="form__button">Отправить</button>
+    <p class="form__description form__description--note">Нажимая на кнопку, вы соглашаетесь с условиями обработки
+      персональных данных</p>
   </div>
-  <button type="submit" class="form__button">Отправить</button>
-  <p class="form__description form__description--note">Нажимая на кнопку, вы соглашаетесь с условиями обработки
-    персональных данных</p>
+  <div class="form__desktop-right">
+
+  </div>
 </form>
+<section class="reviews">
+  <h2 class="reviews__title">Отзывы наших клиентов</h2>
+  <div class="reviews__desktop-wrapper">
+    <img src="./img/reviews_img-left.png" alt="" class="reviews__desktop-images" width="192" height="192">
+    <img src="./img/reviews_img-right.png" alt="" class="reviews__desktop-images" width="192" height="192">
+    <div class="reviews__wrapper">
+      <img src="./img/reviews_main-photo.png" alt="" class="reviews__main-img" width="247" height="224">
+      <div class="reviews__text-wrapper">
+        <p class="reviews__name">Александра Холодная</p>
+        <p class="reviews__description">Услуга: интерьер детской</p>
+        <p class="reviews__text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла
+          быстро
+          и
+          легко, команда выполнила все точно в срок, сделали все как мы и хотели.
+          В следующий раз обратимся к BRUME!</p>
+      </div>
+    </div>
+  </div>
+  <div class="review-switcher">
+    <a href="" class="review-switcher__link review-switcher__link--active"></a>
+    <a href="" class="review-switcher__link"></a>
+    <a href="" class="review-switcher__link"></a>
+    <a href="" class="review-switcher__link"></a>
+  </div>
+</section>
 <footer class="footer">
   <img class="footer__logo" src="./img/footer_logo_mobile.png" alt="Логотип в футере" class="footer__logo" width="70">
   <div class="footer__inner-wrapper">
